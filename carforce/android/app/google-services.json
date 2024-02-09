@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "310724449970",
+    "project_id": "carforce-bdk6969",
+    "storage_bucket": "carforce-bdk6969.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310724449970:android:d23de411d40c6a73ea1bab",
+        "android_client_info": {
+          "package_name": "com.example.carforce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6LnYQu_Inm4CTUMuZPPqcKU9sswcN4ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
