@@ -15,9 +15,13 @@ class SignUpPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                const FlutterLogo(
-                  size: 120,
+                Image.asset(
+                  "assets/images/logo.PNG",
+                  fit: BoxFit.contain,
                 ),
+                /*const FlutterLogo(
+                  size: 120,
+                ),*/
                 const SizedBox(height: 30),
                 const Text(
                   'Create an Account',

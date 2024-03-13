@@ -8,23 +8,27 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blueGrey[700],
-      body: Center(
+      body: Container(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 40.0),
+            padding: const EdgeInsets.symmetric(horizontal: 35.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                const FlutterLogo(
-                  size: 120,
-                  //colors: Colors.white,
-                  style: FlutterLogoStyle.horizontal,
+                Image.asset(
+                  "assets/images/ai_powered.PNG",
+                  fit: BoxFit.contain,
                 ),
+                /*const FlutterLogo(
+                  size: 120,
+                  style: FlutterLogoStyle.horizontal,
+                ),*/
                 const SizedBox(height: 30),
                 const Text(
                   'Welcome to carForce!',
                   style: TextStyle(
+                    fontFamily: 'Comfortaa',
                     color: Colors.white,
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -35,6 +39,7 @@ class LoginPage extends StatelessWidget {
                   'The worlds first AI powered automotive marketplace',
                   style: TextStyle(
                     color: Colors.white,
+                    fontFamily: 'Comfortaa',
                     fontSize: 16,
                     //fontWeight: FontWeight.bold,
                   ),
@@ -42,7 +47,8 @@ class LoginPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 30),
                 TextFormField(
-                  style: const TextStyle(color: Colors.white),
+                  style: const TextStyle(
+                      color: Colors.white, fontFamily: 'Comfortaa'),
                   decoration: InputDecoration(
                     hintText: 'Enter your email',
                     hintStyle: const TextStyle(color: Colors.white54),
@@ -59,7 +65,8 @@ class LoginPage extends StatelessWidget {
                   obscureText: true,
                   decoration: InputDecoration(
                     hintText: 'Enter your password',
-                    hintStyle: const TextStyle(color: Colors.white54),
+                    hintStyle: const TextStyle(
+                        color: Colors.white54, fontFamily: 'Comfortaa'),
                     prefixIcon: const Icon(Icons.lock, color: Colors.white),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
@@ -153,7 +160,7 @@ class LoginPage extends StatelessWidget {
                     // Add navigation to main page and bypass
                   },
                   child: const Text(
-                    'Skip account creation for now',
+                    "I'll setup an account later",
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
